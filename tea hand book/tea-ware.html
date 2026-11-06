@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Tea Ware — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="active">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html" class="active">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>🏺 Essential Tea Ware</h1>
+            <p>The right tools make all the difference</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Everyday Essentials</h2>
+            <ul>
+                <li><strong>Teapot</strong> — Ceramic or porcelain is best. Avoid metal — it can affect the flavor.</li>
+                <li><strong>Teacup</strong> — Thick ceramic keeps tea warm longer. Clear glass lets you admire the leaves unfolding!</li>
+                <li><strong>Infuser / Strainer</strong> — Mesh balls, bamboo baskets, or built-in pot filters — keeps leaves out of your cup.</li>
+                <li><strong>Kettle</strong> — Gooseneck kettles give you better control when pouring.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Traditional Gongfu Tools</h2>
+            <ul>
+                <li><strong>Gaiwan</strong> — A bowl with a lid and saucer. The most versatile piece — brews every type of tea perfectly.</li>
+                <li><strong>Yixing Teapot</strong> — Purple clay from China. Unglazed inside — it absorbs tea oils and improves with age. Best for one type of tea only.</li>
+                <li><strong>Fairness Pitcher</strong> — Pour all your tea here first, then share equally into cups. Everyone gets the same strength!</li>
+                <li><strong>Tea Needle / Pick</strong> — Breaks apart compressed pu-erh cakes without damaging the leaves.</li>
+                <li><strong>Tea Tray</strong> — Catches spilled water — gongfu brewing is intentionally wet!</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Care & Maintenance</h2>
+            <ul>
+                <li><strong>Never use soap!</strong> Hot water only — soap residue ruins the flavor of your next cup.</li>
+                <li><strong>Dry thoroughly</strong> — Bamboo and wood need to air dry to prevent mold.</li>
+                <li><strong>Yixing clay</strong> — Rinse with hot water only. Over time, it develops a patina that enhances your tea.</li>
+                <li><strong>Glass & Ceramic</strong> — Hot water rinse is all you need. Avoid sudden temperature changes — they may crack!</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

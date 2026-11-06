@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Tea — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="active">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html" class="active">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>📜 The History of Tea</h1>
+            <p>From ancient legend to the world's most beloved beverage</p>
+        </header>
+
+        <section class="content-section">
+            <h2>The Legendary Beginning</h2>
+            <p>According to Chinese legend, tea was discovered in <strong>2737 BCE</strong> by the Emperor <strong>Shen Nong</strong>. While resting beneath a tree, a few leaves blew into his bowl of hot water. He loved the golden infusion so much — tea was born!</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Timeline Through Time</h2>
+            <ul>
+                <li><strong>🌿 2700s BCE — China:</strong> First used as medicine, then as a beverage. For centuries, only green tea existed.</li>
+                <li><strong>📖 Tang Dynasty (618–907):</strong> Tea becomes a daily drink. Lu Yu writes the first book about tea — <em>The Classic of Tea</em>.</li>
+                <li><strong>🎨 Song Dynasty (960–1279):</strong> Whisked powdered tea — the precursor to modern Matcha. Tea becomes an art form.</li>
+                <li><strong>🌏 800s–1200s — Spreads East:</strong> Buddhist monks bring tea to Japan — where it evolves into the Japanese tea ceremony.</li>
+                <li><strong>⚙️ Ming Dynasty (1368–1644):</strong> Loose-leaf tea is invented. People discover oxidation — and black and oolong teas are born!</li>
+                <li><strong>🚢 1600s — Reaches the West:</strong> Dutch and Portuguese traders ship tea to Europe. It becomes an expensive luxury.</li>
+                <li><strong>🇬🇧 1600s–1800s — British Love Affair:</strong> The British fall in love with tea. They plant it in India and Ceylon — making it affordable worldwide.</li>
+                <li><strong>🌎 Today:</strong> Tea is the second most drunk beverage on Earth — after water. Enjoyed in every country, in thousands of forms.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>All "true tea" — green, black, oolong, white, pu-erh — comes from the exact same plant: <em>Camellia sinensis</em>!</li>
+                <li>For thousands of years, tea was boiled, eaten, or whisked — it's only been steeped for the last 600 years.</li>
+                <li>Before sugar and milk became common, tea was often seasoned with salt, ginger, or even onions!</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

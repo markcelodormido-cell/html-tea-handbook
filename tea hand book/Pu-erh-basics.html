@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pu-erh Tea Basics — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html" class="active">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>🧱 Pu-erh Tea Basics</h1>
+            <p>Aged and fermented tea — improves over time</p>
+        </header>
+
+        <section class="content-section">
+            <h2>What is Pu-erh Tea?</h2>
+            <p>Pu-erh is a unique fermented tea from Yunnan, China. Unlike other teas, it is pressed into cakes or bricks and can be aged for years — like fine wine. The aging process changes its flavor, making it smoother and deeper over time.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Two Main Types</h2>
+            <ul>
+                <li><strong>Raw / Sheng Pu-erh</strong> — Sun-dried, natural aging process, can be bitter when young, transforms over years — bright, bold, evolving</li>
+                <li><strong>Ripe / Shou Pu-erh</strong> — Accelerated fermentation process, smooth, earthy, dark liquor, ready to drink right away — no waiting needed</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>How to Brew Pu-erh Tea</h2>
+            <table>
+                <tr>
+                    <th>Water Temp</th>
+                    <th>Steeping Time</th>
+                    <th>Preparation Tip</th>
+                </tr>
+                <tr>
+                    <td>95°C – 100°C</td>
+                    <td>First rinse: 10 sec<br>Then 20–40 sec per steep</td>
+                    <td>Rinse leaves first with hot water, then brew</td>
+                </tr>
+            </table>
+            <p><em>Tip: Pu-erh can be steeped many times — 10+ infusions! Each cup tastes slightly different. Always "wake up" the leaves with a quick rinse first.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

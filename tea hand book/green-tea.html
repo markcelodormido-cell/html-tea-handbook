@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Tea — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html" class="active">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>🍵 Green Tea Profiles</h1>
+            <p>Unoxidized tea — fresh, grassy, and delicate</p>
+        </header>
+
+        <section class="content-section">
+            <h2>What is Green Tea?</h2>
+            <p>Green tea is made from the leaves of the Camellia sinensis plant that have not undergone oxidation. The leaves are heated soon after picking to stop natural oxidation, preserving their green color and fresh, vegetal flavor. Originating in China, green tea is now enjoyed worldwide.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Popular Green Tea Varieties</h2>
+            <ul>
+                <li><strong>Long Jing (Dragon Well)</strong> — Pan-roasted, chestnut aroma, flat and smooth leaves</li>
+                <li><strong>Sencha</strong> — Japanese steamed green tea, bright green, grassy and refreshing</li>
+                <li><strong>Matcha</strong> — Finely ground green tea powder, whisked into hot water</li>
+                <li><strong>Gyokuro</strong> — Shade-grown, rich and sweet, high in caffeine</li>
+                <li><strong>Bi Luo Chun</strong> — Downy leaves, fruity aroma, rolled into tiny spirals</li>
+                <li><strong>Jasmine Green Tea</strong> — Scented with jasmine flowers, sweet and floral</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>How to Brew Green Tea</h2>
+            <table>
+                <tr>
+                    <th>Water Temp</th>
+                    <th>Steeping Time</th>
+                    <th>Leaf Amount</th>
+                </tr>
+                <tr>
+                    <td>75°C – 80°C</td>
+                    <td>2 – 3 minutes</td>
+                    <td>1 teaspoon per cup</td>
+                </tr>
+            </table>
+            <p><em>Tip: Never use boiling water — it will burn the leaves and make the tea bitter!</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

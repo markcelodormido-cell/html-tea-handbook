@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storing Tea — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="active">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html" class="active">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>📦 Storing Tea Properly</h1>
+            <p>Keep your tea fresh and flavorful longer</p>
+        </header>
+
+        <section class="content-section">
+            <h2>The 4 Enemies of Tea</h2>
+            <ul>
+                <li><strong>☀️ Light</strong> — Sunlight breaks down flavor compounds — store in opaque containers</li>
+                <li><strong>💧 Moisture</strong> — Tea absorbs water from the air — keep it dry!</li>
+                <li><strong>🌬️ Air</strong> — Oxygen makes tea go stale — seal it tight</li>
+                <li><strong>👃 Strong Odors</strong> — Tea smells like everything nearby — keep away from spices, coffee, soap</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Best Storage Containers</h2>
+            <ul>
+                <li><strong>✅ Best:</strong> Tightly sealed metal tins, ceramic jars, or glass jars kept in a dark cabinet</li>
+                <li><strong>⚠️ Okay:</strong> Original packaging if resealable — transfer to a tin once opened</li>
+                <li><strong>❌ Avoid:</strong> Plastic bags alone — they don't block odors or air well enough</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Shelf Life Guide</h2>
+            <table>
+                <tr>
+                    <th>Tea Type</th>
+                    <th>Best Within</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>🍵 Green & White</td>
+                    <td>6 – 12 months</td>
+                    <td>Most delicate — drink fresh! Keep in fridge if you can</td>
+                </tr>
+                <tr>
+                    <td>🍃 Oolong</td>
+                    <td>1 – 2 years</td>
+                    <td>Light oolong — drink sooner; darker can last longer</td>
+                </tr>
+                <tr>
+                    <td>🫖 Black Tea</td>
+                    <td>2 – 3 years</td>
+                    <td>Stays fresh longer — store well and enjoy slowly</td>
+                </tr>
+                <tr>
+                    <td>🧱 Pu-erh</td>
+                    <td>Many years!</td>
+                    <td>Needs AIR circulation — NOT airtight! It ages and improves like wine</td>
+                </tr>
+                <tr>
+                    <td>🌿 Herbal</td>
+                    <td>1 – 2 years</td>
+                    <td>Flowers and herbs lose potency over time — replace annually</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>Special Tip for Pu-erh</h2>
+            <p>Unlike other teas, pu-erh needs air circulation to age properly. Store it in a breathable paper wrapper or loose ceramic jar — NOT airtight! It will slowly transform and improve in flavor over months and years.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

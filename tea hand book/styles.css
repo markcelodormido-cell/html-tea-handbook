@@ -1,0 +1,352 @@
+/* ===== GLOBAL RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tea-cream: #F8F4E9;
+    --tea-beige: #E8DFC9;
+    --tea-gold: #B8860B;
+    --tea-green: #4F6F52;
+    --tea-brown: #5C4033;
+    --text-dark: #2C2C2C;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--tea-cream);
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--tea-brown);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+    background-color: var(--tea-green);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.8rem 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
+    padding: 1rem 0.9rem;
+    color: white;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: rgba(255,255,255,0.15);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.dropdown-menu a {
+    color: var(--text-dark);
+    padding: 0.7rem 1.2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--tea-beige);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(rgba(92, 64, 51, 0.7), rgba(79, 111, 82, 0.7)), url('images/tea-bg.jpg') center/cover no-repeat;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 3rem 1.2rem;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--tea-gold);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #9A7209;
+    transform: translateY(-2px);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.2rem 4rem;
+}
+
+.home-sections {
+    max-width: 1200px;
+}
+
+.intro {
+    text-align: center;
+    padding: 3rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.featured-grid h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.8rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--tea-gold);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.card-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--tea-green);
+    font-weight: 500;
+}
+
+.card-link:hover {
+    color: var(--tea-gold);
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--tea-beige);
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+}
+
+.content-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.content-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--tea-green);
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+}
+
+.content-section ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    list-style-type: disc;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+th, td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--tea-green);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: var(--tea-beige);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--tea-brown);
+    color: white;
+    text-align: center;
+    padding: 2rem 1.2rem;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 0.2rem;
+    }
+    .nav-links a {
+        padding: 1rem 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--tea-green);
+        display: none;
+        gap: 0;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .dropdown-menu {
+        position: static;
+        background-color: rgba(0,0,0,0.08);
+        box-shadow: none;
+    }
+    .content-section {
+        padding: 1.2rem;
+    }
+    table, th, td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+    .btn-primary {
+        padding: 0.6rem 1.4rem;
+    }
+}

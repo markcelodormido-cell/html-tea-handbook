@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffeine Guide — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="active">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html" class="active">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>☕ Caffeine in Tea Guide</h1>
+            <p>How much caffeine is in your cup?</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Quick Comparison</h2>
+            <table>
+                <tr>
+                    <th>Drink</th>
+                    <th>Approx. Caffeine (per cup)</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>🌿 Herbal Infusions</td>
+                    <td>0 mg</td>
+                    <td>Naturally caffeine-free — safe any time of day</td>
+                </tr>
+                <tr>
+                    <td>🤍 White Tea</td>
+                    <td>15 – 30 mg</td>
+                    <td>Lowest in true teas — gentle energy</td>
+                </tr>
+                <tr>
+                    <td>🍵 Green Tea</td>
+                    <td>25 – 45 mg</td>
+                    <td>Also contains L-theanine — calm alertness</td>
+                </tr>
+                <tr>
+                    <td>🍃 Oolong Tea</td>
+                    <td>30 – 60 mg</td>
+                    <td>In between green and black</td>
+                </tr>
+                <tr>
+                    <td>🧱 Pu-erh Tea</td>
+                    <td>30 – 70 mg</td>
+                    <td>Varies by age and brewing</td>
+                </tr>
+                <tr>
+                    <td>🫖 Black Tea</td>
+                    <td>40 – 90 mg</td>
+                    <td>Highest caffeine — great morning pick-me-up</td>
+                </tr>
+                <tr>
+                    <td>☕ Coffee</td>
+                    <td>95 – 200 mg</td>
+                    <td>Tea has about half as much!</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>Factors That Change Caffeine</h2>
+            <ul>
+                <li><strong>🌱 Which part of the plant:</strong> Buds and young leaves have MORE caffeine than older, larger leaves</li>
+                <li><strong>⏱️ Steeping time:</strong> The longer you steep, the MORE caffeine comes out — first infusion has the most</li>
+                <li><strong>🌡️ Water temperature:</strong> Hotter water extracts caffeine FASTER</li>
+                <li><strong>🌍 Where it grows:</strong> Higher altitude = slower growth = often MORE caffeine</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Tea vs. Coffee — What's the Difference?</h2>
+            <p>Tea contains <strong>L-theanine</strong>, an amino acid that slows caffeine absorption. This means tea gives you <em>gentler, longer-lasting energy</em> without the jittery spike or sudden crash that coffee can cause!</p>
+        </section>
+
+        <section class="content-section">
+            <h2>When to Drink What</h2>
+            <ul>
+                <li>☀️ <strong>Morning:</strong> Black tea or strong coffee — higher caffeine</li>
+                <li>🕐 <strong>Afternoon:</strong> Green, white, or light oolong — gentle energy</li>
+                <li>🌙 <strong>Evening:</strong> Herbal infusions — zero caffeine, completely relaxing</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

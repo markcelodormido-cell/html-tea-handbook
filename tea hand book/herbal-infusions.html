@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Infusions — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html" class="active">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>🌿 Herbal Infusions</h1>
+            <p>Naturally caffeine-free — herbs, flowers, fruits, and roots</p>
+        </header>
+
+        <section class="content-section">
+            <h2>What are Herbal Infusions?</h2>
+            <p>Herbal infusions are not "true tea" — they contain no Camellia sinensis leaves. Instead, they are made from steeping fresh or dried flowers, herbs, fruits, and roots in hot water. Most are naturally caffeine-free and offer a wide range of flavors and wellness benefits.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Popular Herbal Infusions</h2>
+            <ul>
+                <li><strong>Chamomile</strong> — Dried chamomile flowers, apple-like sweetness, calming and relaxing — perfect before bed</li>
+                <li><strong>Peppermint</strong> — Fresh mint leaves, cool and invigorating, aids digestion and soothes the stomach</li>
+                <li><strong>Hibiscus</strong> — Deep red, tart and fruity, high in Vitamin C, can be enjoyed hot or iced</li>
+                <li><strong>Rooibos</strong> — South African red bush, naturally sweet and nutty, rich in antioxidants — excellent with milk and honey</li>
+                <li><strong>Lemon Ginger</strong> — Zesty lemon with spicy ginger, warming and soothing — great for colds and sore throats</li>
+                <li><strong>Lavender</strong> — Fragrant purple flowers, floral and calming, often blended with chamomile or mint</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>How to Brew Herbal Infusions</h2>
+            <table>
+                <tr>
+                    <th>Water Temp</th>
+                    <th>Steeping Time</th>
+                    <th>Tip</th>
+                </tr>
+                <tr>
+                    <td>95°C – 100°C</td>
+                    <td>5 – 10 minutes</td>
+                    <td>Cover while steeping — herbs take longer than tea!</td>
+                </tr>
+            </table>
+            <p><em>Tip: Unlike tea, herbal infusions can steep longer without turning bitter. The longer you steep, the stronger the flavor gets. Cover your cup to keep the essential oils from escaping!</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

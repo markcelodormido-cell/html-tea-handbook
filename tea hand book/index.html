@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>The Tea Connoisseur's Handbook</h1>
+            <p>Your complete guide to the history, brewing methods, and profiles of traditional loose-leaf teas.</p>
+            <a href="green-tea.html" class="btn-primary">Start Exploring →</a>
+        </div>
+    </header>
+
+    <main class="home-sections">
+        <section class="intro">
+            <h2>Welcome to the World of Tea</h2>
+            <p>Whether you are new to loose-leaf tea or a seasoned enthusiast, this handbook will guide you through the rich traditions, varieties, and techniques of tea appreciation.</p>
+        </section>
+
+        <section class="featured-grid">
+            <h2>Explore the Guide</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Tea Types</h3>
+                    <p>Discover Green, Black, Oolong, White, Pu-erh & Herbal Infusions</p>
+                    <a href="green-tea.html" class="card-link">View →</a>
+                </div>
+                <div class="card">
+                    <h3>Brewing Guides</h3>
+                    <p>Master water temps, steeping times, Gongfu & Western methods</p>
+                    <a href="temp-chart.html" class="card-link">View →</a>
+                </div>
+                <div class="card">
+                    <h3>Tea Culture</h3>
+                    <p>History, storage, caffeine facts & mindful tea drinking</p>
+                    <a href="tea-history.html" class="card-link">View →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

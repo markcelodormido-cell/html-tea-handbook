@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Tea — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html" class="active">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>🫖 Black Tea Profiles</h1>
+            <p>Fully oxidized — bold, rich, and malty</p>
+        </header>
+
+        <section class="content-section">
+            <h2>What is Black Tea?</h2>
+            <p>Black tea is fully oxidized, giving it a dark reddish-brown color and bold flavor. It comes from the same plant as green tea, but the leaves are allowed to wither and oxidize completely before drying. It holds up well to milk and sugar.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Popular Black Tea Varieties</h2>
+            <ul>
+                <li><strong>Assam</strong> — Bold, malty, strong breakfast tea from India</li>
+                <li><strong>Darjeeling</strong> — Floral, delicate, muscatel aroma — "Champagne of teas"</li>
+                <li><strong>Ceylon</strong> — Bright, bold, citrus notes — from Sri Lanka</li>
+                <li><strong>English Breakfast</strong> — Rich blend, perfect with milk</li>
+                <li><strong>Earl Grey</strong> — Black tea scented with bergamot oil — citrusy and fragrant</li>
+                <li><strong>Keemun</strong> — Chinese black tea, wine-like, smoky, smooth</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>How to Brew Black Tea</h2>
+            <table>
+                <tr>
+                    <th>Water Temp</th>
+                    <th>Steeping Time</th>
+                    <th>Leaf Amount</th>
+                </tr>
+                <tr>
+                    <td>90°C – 100°C</td>
+                    <td>3 – 5 minutes</td>
+                    <td>1 teaspoon per cup</td>
+                </tr>
+            </table>
+            <p><em>Tip: Black tea can handle boiling water! Don't steep too long or it may become bitter.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

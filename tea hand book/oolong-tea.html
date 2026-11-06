@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oolong Tea — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html" class="active">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>🍃 Oolong Tea Profiles</h1>
+            <p>Partially oxidized — between green and black tea</p>
+        </header>
+
+        <section class="content-section">
+            <h2>What is Oolong Tea?</h2>
+            <p>Oolong tea is partially oxidized, falling somewhere between green and black tea in flavor and color. Oxidation levels range from 15% to 70%, creating a wide variety of tastes — from floral and sweet to rich and toasty.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Popular Oolong Tea Varieties</h2>
+            <ul>
+                <li><strong>Tie Guan Yin (Iron Goddess)</strong> — Floral, fragrant, smooth — one of China's most famous teas</li>
+                <li><strong>Da Hong Pao (Big Red Robe)</strong> — Roasted, mineral, rich — a legendary rock tea</li>
+                <li><strong>Dong Ding</strong> — Taiwanese, lightly roasted, nutty and sweet</li>
+                <li><strong>High Mountain / Ali Shan</strong> — Taiwan, high altitude, creamy, buttery, floral</li>
+                <li><strong>Bai Hao / Oriental Beauty</strong> — Heavily oxidized, honey-sweet, fruity, unique aroma</li>
+                <li><strong>Phoenix Dancong</strong> — Complex floral aromas — honey, orchid, citrus notes</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>How to Brew Oolong Tea</h2>
+            <table>
+                <tr>
+                    <th>Water Temp</th>
+                    <th>Steeping Time</th>
+                    <th>Leaf Amount</th>
+                </tr>
+                <tr>
+                    <td>85°C – 95°C</td>
+                    <td>2 – 4 minutes</td>
+                    <td>1–2 tsp per cup</td>
+                </tr>
+            </table>
+            <p><em>Tip: Oolong leaves can be re-steeped multiple times! Each infusion brings out different flavors.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>

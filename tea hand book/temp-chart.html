@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp & Steeping Chart — The Tea Connoisseur's Handbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Tea Handbook</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Tea Types ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="green-tea.html">Green Tea</a></li>
+                        <li><a href="black-tea.html">Black Tea</a></li>
+                        <li><a href="oolong-tea.html">Oolong Tea</a></li>
+                        <li><a href="white-tea.html">White Tea</a></li>
+                        <li><a href="pu-erh-basics.html">Pu-erh Tea</a></li>
+                        <li><a href="herbal-infusions.html">Herbal Infusions</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="active">Brewing ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="water-science.html">Water & Temp</a></li>
+                        <li><a href="temp-chart.html" class="active">Steeping Chart</a></li>
+                        <li><a href="gongfu-brewing.html">Gongfu Style</a></li>
+                        <li><a href="western-brewing.html">Western Style</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="tea-ware.html">Tea Ware</a></li>
+                        <li><a href="storing-tea.html">Storing Tea</a></li>
+                        <li><a href="tea-history.html">History of Tea</a></li>
+                        <li><a href="caffeine-guide.html">Caffeine Guide</a></li>
+                        <li><a href="tea-meditation.html">Tea & Meditation</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <h1>📊 Temperature & Steeping Time Chart</h1>
+            <p>Quick reference guide for perfect tea every time</p>
+        </header>
+
+        <section class="content-section">
+            <h2>Complete Brewing Guide</h2>
+            <table>
+                <tr>
+                    <th>Tea Type</th>
+                    <th>Water Temperature</th>
+                    <th>Steeping Time</th>
+                    <th>Leaf Amount</th>
+                </tr>
+                <tr>
+                    <td>🍵 Green Tea</td>
+                    <td>75°C – 80°C</td>
+                    <td>2 – 3 minutes</td>
+                    <td>1 tsp per cup</td>
+                </tr>
+                <tr>
+                    <td>🤍 White Tea</td>
+                    <td>70°C – 75°C</td>
+                    <td>3 – 5 minutes</td>
+                    <td>1–2 tsp per cup</td>
+                </tr>
+                <tr>
+                    <td>🍃 Oolong Tea</td>
+                    <td>85°C – 95°C</td>
+                    <td>2 – 4 minutes</td>
+                    <td>1–2 tsp per cup</td>
+                </tr>
+                <tr>
+                    <td>🫖 Black Tea</td>
+                    <td>90°C – 100°C</td>
+                    <td>3 – 5 minutes</td>
+                    <td>1 tsp per cup</td>
+                </tr>
+                <tr>
+                    <td>🧱 Pu-erh Tea</td>
+                    <td>95°C – 100°C</td>
+                    <td>20–40 sec per steep</td>
+                    <td>1 tsp per cup</td>
+                </tr>
+                <tr>
+                    <td>🌿 Herbal Infusions</td>
+                    <td>95°C – 100°C</td>
+                    <td>5 – 10 minutes</td>
+                    <td>1–2 tsp per cup</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>Quick Tips</h2>
+            <ul>
+                <li><strong>Too hot?</strong> Your tea will taste bitter and harsh — especially green and white teas</li>
+                <li><strong>Too cold?</strong> Your tea will taste weak and flat — flavors won't release properly</li>
+                <li><strong>Too long?</strong> Most teas get bitter if over-steeped — herbal infusions are the exception!</li>
+                <li><strong>Not long enough?</strong> Your tea will be pale and lack depth</li>
+                <li><strong>Re-steeping:</strong> Green, white, oolong, and pu-erh can be steeped multiple times — add 30 seconds for each extra infusion</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Tea Connoisseur's Handbook. Dormido, Mark Celo & Liwanag, Jan</p>
+    </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    </script>
+</body>
+</html>
